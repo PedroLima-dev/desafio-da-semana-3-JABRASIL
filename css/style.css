@@ -1,0 +1,364 @@
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+
+body {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 300;
+  font-family: 'Roboto', sans-serif;
+}
+section {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 5%;
+  position: relative;
+  display: table;
+  align-items: center;
+  background: #FFF;
+}
+section hr {
+  width: 20%;
+  margin: 20px;
+  margin-left: 40%;
+}
+.cor_fundo {
+  background: #FFF;
+}
+/* --------  Header  -------- */
+header {
+  height: 80px; 
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  background: salmon;
+}
+header #logo {
+  position: absolute;
+  top: 10px;
+  height: 60px;
+  margin-left: 5%;
+}
+header #logo img{
+  max-height: 100%;
+}
+header .menu {
+  float: right;
+  list-style: none;
+  margin-top: 0px;
+  margin-right: 5%;
+}
+header .menu li {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  float: left;
+  font-size: auto;
+  padding: 20px;
+}
+header .menu a li {
+  font-family: 'Roboto', serif;
+  text-decoration: initial;
+  letter-spacing: 1px;
+  font-weight: 600;
+  color: white;
+}
+header .menu li:hover {
+  background-color: rgb(255, 63, 42);
+}
+#menu2 .see-more a{
+  text-decoration: none;
+  border-radius: 5px;
+  color: #000000;
+  margin-left: 84%;
+  border: 1px solid #000000;
+  padding: 5px;
+  width: 100%;
+}
+#menu2 .see-more a:hover{
+  background-color: #000000;
+  color: #FFF;
+}
+
+
+/* --------  Capa  -------- */
+figure {
+  margin: 0 auto;
+  display: block;
+  align-items: center;
+}
+figure .imagem_fundo {
+  background: url(../img/capa.jpg); 
+  background-size: cover;
+  height: 100%;
+  padding: 180px;
+}
+
+figure .titulo {
+  color: #FFF;
+  line-height: 0.9;
+  text-shadow: 1px 1px black;
+}
+figure h1.titulo {
+  font-size: 50px;
+  letter-spacing: -5px;
+  /* margin: 15% 20% 0% 20%; */
+  padding-bottom: 30px;
+}
+figure h2.titulo {
+  padding-top: 20px;
+  font-size: 30px;
+  margin: 5% 20%;
+  border-top: 3px solid white;
+  padding-bottom: 30px;
+  letter-spacing: 2px;  
+}
+figure .cta1 {
+  border: 1px ridge white;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 0 40%;
+  width: 140px;
+}
+figure .cta1 a{
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: white;
+  text-decoration: none;
+}
+.cta1:hover {
+  background-color:rgb(255, 63, 42);
+  border: 0px;
+}
+/* --------  Colunas  -------- */
+.coluna {
+  float: left;
+  padding: 5%;
+  position: relative;
+}
+.coluna.quatro {
+  width: 25%;
+  padding: 0 5% 0 5%;
+}
+.coluna.tres {
+  width: 25%;
+  padding: 0 2%;
+}
+.coluna.dois {
+  width: 50%;
+}
+.coluna .icone {
+  border-radius: 50%;
+  height: 85px;
+  width: 85px;
+  margin: 0 auto;
+}
+.coluna .icone img{
+  width: 70%;
+  height: 70%;
+  margin: 15px;
+}
+.coluna:hover > .icone {
+  background: rgb(251, 174, 165);
+}
+.coluna img {
+  height: 10%;
+  width: 90%;
+}
+.coluna iframe { 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;
+}
+#menu3 .coluna.tres:hover{
+  text-decoration: underline;
+}
+.coluna.dois .profile{
+  margin-left: 20%;
+  border-radius: 100%;
+  width: auto;
+}
+/* --------  Textos  -------- */
+h1 {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+}
+h2 {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+}    
+.esquerda {
+  text-align: left;
+}
+.direita {
+  text-align: right;
+}
+.centro {
+  text-align: center;
+}
+.justificado {
+  text-align: justify;
+}
+/* --------  Footer  -------- */
+footer {
+  background-color:salmon;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 30px 0 50px 0;
+  color: #fff;
+}
+
+.link {
+  color: white;
+}
+.link:hover {
+  color: black;
+}
+.link2 {
+  color: black;
+  text-decoration: initial;  
+}
+.link2:hover {
+  color: black;
+}
+ 
+footer .container {
+  padding: 30px 0 50px 0;
+}
+/* --------  Responsividade  --------*/
+@media all and (max-width: 768px) {
+  .coluna, .coluna.quatro, .coluna.tres, .coluna.dois {
+    display: block;
+    width: 90%;
+    padding: 0;
+    margin: 10px auto;
+    float: none;
+  }
+  header #logo {
+    position: relative;
+    width: 15%;
+    margin-left: 0px;
+    text-align: center;
+  }
+  header .menu {
+    float: none;
+  }
+  #nav-toggle {
+    border-bottom-left-radius: 8px;
+    -webkit-border-bottom-left-radius: 8px;
+    position: fixed;
+    display: block;
+    background: salmon;
+    padding: 15px;
+    top: 10px;
+    right: 0;
+    transition: all .4s ease;
+  }
+
+  #nav-toggle span{
+    border-radius: 1px;
+    height: 5px;
+    width: 50px;
+    display: block;
+    background: #fff;
+    -webkit-border-radius: 1px;
+    transition: all .4s ease;
+    -webkit-transition: all .4s ease;
+    transform: translate3d(0,0,0);
+    -webkit-transform: translate3d(0,0,0);
+  }
+
+  #nav-toggle span:nth-child(2){
+    margin: 6px 0;
+  }
+
+  #nav-toggle.active span:nth-child(1){
+    transform: rotate(45deg) translate3d(6px,10px,0);
+    -webkit-transform: rotate(45deg) translate3d(6px,10px,0);
+  }
+
+  #nav-toggle.active span:nth-child(2){
+    opacity: 0;
+  }
+
+  #nav-toggle.active span:nth-child(3){
+    transform: rotate(-45deg) translate3d(6px,-10px,0);
+    -webkit-transform: rotate(-45deg) translate3d(6px,-10px,0);
+  }
+
+  .header-collapse {
+    display: block;
+    position: fixed;
+    background: salmon;
+    opacity: .95;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    padding: 15px;
+    top: -100%;
+    left: 0;
+    transition: top .4s ease;
+    -webkit-transition: top .4s ease;
+  }
+
+  .header-collapse.active{
+    top: 10%;
+  }
+
+  .header-nav ul li{
+    width: 100%;
+    justify-content: center;
+    padding: 5px 0;
+    margin-bottom: 10px;
+  }
+
+  .header-nav ul li a{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.375rem;
+  }
+
+  figure .imagem_fundo {
+    background: url(../img/capa-mobile.png); 
+    background-size: cover;
+    height: 100%;
+    padding: 75px 10px;
+  }
+
+  figure h1.titulo {
+    font-size: 40px;
+    letter-spacing: -5px;
+    text-align: center;
+    margin-top: 40%;
+    margin: 70% 0 0 -5%;
+    padding-bottom: 20px;
+  }
+  figure h2.titulo {
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin: 20% 20% 5% 20%;
+    padding-bottom: 30px;
+  }
+  figure .cta1{
+    margin: 0% 0% 42% 30%;
+    padding: 10px;
+  }
+
+  #menu2 .see-more a{
+    margin-left: 40%;
+  }
+  .content{
+    max-width: 1280px;
+    width: 90%;
+  }
+}
